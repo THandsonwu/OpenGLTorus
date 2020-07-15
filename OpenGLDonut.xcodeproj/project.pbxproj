@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE9BF2C924BD9D6900ED00D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF2C824BD9D6900ED00D5 /* AppDelegate.m */; };
-		EE9BF2CC24BD9D6900ED00D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF2CB24BD9D6900ED00D5 /* ViewController.m */; };
 		EE9BF2CE24BD9D6B00ED00D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9BF2CD24BD9D6B00ED00D5 /* Assets.xcassets */; };
 		EE9BF2D124BD9D6B00ED00D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9BF2CF24BD9D6B00ED00D5 /* Main.storyboard */; };
-		EE9BF2D424BD9D6B00ED00D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF2D324BD9D6B00ED00D5 /* main.m */; };
 		EE9BF2DF24BD9D6B00ED00D5 /* OpenGLDonutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF2DE24BD9D6B00ED00D5 /* OpenGLDonutTests.m */; };
 		EE9BF2EA24BD9D6B00ED00D5 /* OpenGLDonutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF2E924BD9D6B00ED00D5 /* OpenGLDonutUITests.m */; };
+		EE9BF30924BD9DB900ED00D5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BF30824BD9DB900ED00D5 /* OpenGL.framework */; };
+		EE9BF30B24BD9DBF00ED00D5 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BF30A24BD9DBF00ED00D5 /* GLUT.framework */; };
+		EE9BF30D24BD9DCE00ED00D5 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BF30C24BD9DCD00ED00D5 /* libGLTools.a */; };
+		EE9BF30F24BD9EB400ED00D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9BF30E24BD9EB400ED00D5 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +36,9 @@
 
 /* Begin PBXFileReference section */
 		EE9BF2C424BD9D6900ED00D5 /* OpenGLDonut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLDonut.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE9BF2C724BD9D6900ED00D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EE9BF2C824BD9D6900ED00D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EE9BF2CA24BD9D6900ED00D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE9BF2CB24BD9D6900ED00D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE9BF2CD24BD9D6B00ED00D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9BF2D024BD9D6B00ED00D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE9BF2D224BD9D6B00ED00D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE9BF2D324BD9D6B00ED00D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE9BF2D524BD9D6B00ED00D5 /* OpenGLDonut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGLDonut.entitlements; sourceTree = "<group>"; };
 		EE9BF2DA24BD9D6B00ED00D5 /* OpenGLDonutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLDonutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9BF2DE24BD9D6B00ED00D5 /* OpenGLDonutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLDonutTests.m; sourceTree = "<group>"; };
@@ -50,6 +46,24 @@
 		EE9BF2E524BD9D6B00ED00D5 /* OpenGLDonutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLDonutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9BF2E924BD9D6B00ED00D5 /* OpenGLDonutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLDonutUITests.m; sourceTree = "<group>"; };
 		EE9BF2EB24BD9D6B00ED00D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9BF2F824BD9DAC00ED00D5 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		EE9BF2F924BD9DAC00ED00D5 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		EE9BF2FA24BD9DAC00ED00D5 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		EE9BF2FB24BD9DAC00ED00D5 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		EE9BF2FC24BD9DAC00ED00D5 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		EE9BF2FD24BD9DAC00ED00D5 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		EE9BF2FE24BD9DAC00ED00D5 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		EE9BF2FF24BD9DAC00ED00D5 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		EE9BF30024BD9DAC00ED00D5 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		EE9BF30124BD9DAC00ED00D5 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		EE9BF30324BD9DAC00ED00D5 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		EE9BF30424BD9DAC00ED00D5 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		EE9BF30524BD9DAC00ED00D5 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		EE9BF30624BD9DAC00ED00D5 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		EE9BF30824BD9DB900ED00D5 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EE9BF30A24BD9DBF00ED00D5 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		EE9BF30C24BD9DCD00ED00D5 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = OpenGLDonut/libGLTools.a; sourceTree = "<group>"; };
+		EE9BF30E24BD9EB400ED00D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9BF30D24BD9DCE00ED00D5 /* libGLTools.a in Frameworks */,
+				EE9BF30B24BD9DBF00ED00D5 /* GLUT.framework in Frameworks */,
+				EE9BF30924BD9DB900ED00D5 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +101,7 @@
 				EE9BF2DD24BD9D6B00ED00D5 /* OpenGLDonutTests */,
 				EE9BF2E824BD9D6B00ED00D5 /* OpenGLDonutUITests */,
 				EE9BF2C524BD9D6900ED00D5 /* Products */,
+				EE9BF30724BD9DB800ED00D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,15 +118,12 @@
 		EE9BF2C624BD9D6900ED00D5 /* OpenGLDonut */ = {
 			isa = PBXGroup;
 			children = (
-				EE9BF2C724BD9D6900ED00D5 /* AppDelegate.h */,
-				EE9BF2C824BD9D6900ED00D5 /* AppDelegate.m */,
-				EE9BF2CA24BD9D6900ED00D5 /* ViewController.h */,
-				EE9BF2CB24BD9D6900ED00D5 /* ViewController.m */,
+				EE9BF2F724BD9DAC00ED00D5 /* include */,
 				EE9BF2CD24BD9D6B00ED00D5 /* Assets.xcassets */,
 				EE9BF2CF24BD9D6B00ED00D5 /* Main.storyboard */,
 				EE9BF2D224BD9D6B00ED00D5 /* Info.plist */,
-				EE9BF2D324BD9D6B00ED00D5 /* main.m */,
 				EE9BF2D524BD9D6B00ED00D5 /* OpenGLDonut.entitlements */,
+				EE9BF30E24BD9EB400ED00D5 /* main.cpp */,
 			);
 			path = OpenGLDonut;
 			sourceTree = "<group>";
@@ -129,6 +144,45 @@
 				EE9BF2EB24BD9D6B00ED00D5 /* Info.plist */,
 			);
 			path = OpenGLDonutUITests;
+			sourceTree = "<group>";
+		};
+		EE9BF2F724BD9DAC00ED00D5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EE9BF2F824BD9DAC00ED00D5 /* GLBatchBase.h */,
+				EE9BF2F924BD9DAC00ED00D5 /* math3d.h */,
+				EE9BF2FA24BD9DAC00ED00D5 /* GLTriangleBatch.h */,
+				EE9BF2FB24BD9DAC00ED00D5 /* GLBatch.h */,
+				EE9BF2FC24BD9DAC00ED00D5 /* GLMatrixStack.h */,
+				EE9BF2FD24BD9DAC00ED00D5 /* GLFrame.h */,
+				EE9BF2FE24BD9DAC00ED00D5 /* GLFrustum.h */,
+				EE9BF2FF24BD9DAC00ED00D5 /* GLGeometryTransform.h */,
+				EE9BF30024BD9DAC00ED00D5 /* GLShaderManager.h */,
+				EE9BF30124BD9DAC00ED00D5 /* StopWatch.h */,
+				EE9BF30224BD9DAC00ED00D5 /* GL */,
+				EE9BF30624BD9DAC00ED00D5 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EE9BF30224BD9DAC00ED00D5 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				EE9BF30324BD9DAC00ED00D5 /* glxew.h */,
+				EE9BF30424BD9DAC00ED00D5 /* wglew.h */,
+				EE9BF30524BD9DAC00ED00D5 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		EE9BF30724BD9DB800ED00D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE9BF30C24BD9DCD00ED00D5 /* libGLTools.a */,
+				EE9BF30A24BD9DBF00ED00D5 /* GLUT.framework */,
+				EE9BF30824BD9DB900ED00D5 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9BF2CC24BD9D6900ED00D5 /* ViewController.m in Sources */,
-				EE9BF2D424BD9D6B00ED00D5 /* main.m in Sources */,
-				EE9BF2C924BD9D6900ED00D5 /* AppDelegate.m in Sources */,
+				EE9BF30F24BD9EB400ED00D5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,10 +479,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CQNZ85QPJM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenGLDonut/include\"";
 				INFOPLIST_FILE = OpenGLDonut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLDonut",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ut.OpenGLDonut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,10 +503,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CQNZ85QPJM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenGLDonut/include\"";
 				INFOPLIST_FILE = OpenGLDonut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLDonut",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ut.OpenGLDonut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
